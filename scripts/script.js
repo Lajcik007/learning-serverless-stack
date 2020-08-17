@@ -1,4 +1,4 @@
-// TEST API CREATE
+// **TEST API CREATE**
 // npx aws-api-gateway-cli-test \
 //   --username='admin@example.com' \
 //   --password='Passw0rd!' \
@@ -11,3 +11,9 @@
 //   --path-template='notes' \
 //   --method='POST' \
 //   --body='{"content":"hello world","attachment":"hello.jpg"}'
+
+// **CONFIRM USER - MANUAL**
+// aws cognito-idp admin-confirm-sign-up \
+//    --region YOUR_COGNITO_REGION \
+//    --user-pool-id YOUR_COGNITO_USER_POOL_ID \
+//    --username YOUR_USER_EMAIL
